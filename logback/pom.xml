@@ -16,16 +16,11 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example.logging</groupId>
-  <artifactId>jul</artifactId>
+  <artifactId>logback</artifactId>
   <packaging>war</packaging>
   <version>0.0.1</version>
   <name>example-webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
-
-  <!--
-    The parent pom defines common style checks and testing strategies for our samples.
-    Removing or replacing it should not affect the execution of the samples in anyway.
-  -->
 
   <properties>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -34,11 +29,11 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>com.google.cloud</groupId>
-      <artifactId>google-cloud-logging</artifactId>
-      <version>1.83.0</version>
-    </dependency>
+	<dependency>
+	  <groupId>com.google.cloud</groupId>
+	  <artifactId>google-cloud-logging-logback</artifactId>
+	  <version>0.108.0-alpha</version>
+	</dependency>
 
     <!-- Test dependencies -->
     <dependency>
